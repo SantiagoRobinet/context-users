@@ -1,12 +1,15 @@
-import './App.css';
 import UsersList from "./components/UserList/UserList";
 import Profile from "./components/Profile/Profile";
+import UserState from "./context/User/UserState";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <>
-      <UsersList />
-      <Profile />
+      <UserState>
+        <UsersList />
+        <Profile />
+      </UserState>
     </>
   );
 }
