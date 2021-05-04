@@ -22,7 +22,7 @@ function UserState({children}){
 
     const getProfile = async (id) => {
         const profile = await axios.get(`https://reqres.in/api/users/${id}`);
-        console.log(`user id ${id}`)
+        console.log(profile)
         dispatch({
             type: GET_PROFILE,
             payload: profile.data.data

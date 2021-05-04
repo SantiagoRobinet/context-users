@@ -7,8 +7,15 @@ function App() {
   return (
     <>
       <UserState>
-        <UsersList />
-        <Profile />
+        <div className='container p-4 d-flex justify-content-center'>
+          <div className='col-md-7'>
+            <UsersList />
+          </div>
+          <div className='col-md-5'>
+            <Profile />
+          </div>
+
+        </div>
       </UserState>
     </>
   );
